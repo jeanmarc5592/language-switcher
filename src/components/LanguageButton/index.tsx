@@ -1,3 +1,4 @@
+import styles from './LanguageButton.module.css';
 type LanguageButtonProps = {
   code: string;
   name: string;
@@ -7,6 +8,9 @@ type LanguageButtonProps = {
 
 export const LanguageButton: React.FC<LanguageButtonProps> = ({ code, name, iso }) => {
   return (
-    <div>{name}</div>
+    <a href="/jo" className={styles.container}>
+      {/* TODO: Add dynamic flag */}
+      <p className={styles.countryLabel}>{name}</p>
+    </a>
   )
 }
