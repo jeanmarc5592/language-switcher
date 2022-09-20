@@ -1,0 +1,8 @@
+.mainContainer {
+  /* 
+    max-width: 640px because it's a well known mobile breakpoint
+    See: https://polypane.app/blog/the-breakpoints-we-tested-in-2021-and-the-ones-to-test-in-2022/
+  */
+  max-width: 640px;
+  margin: 0 auto;
+}

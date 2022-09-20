@@ -1,9 +1,9 @@
+import styles from './App.module.css';
 
-
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className={styles.mainContainer}>
+      <h1>Welche Sprache sprichst du?</h1>
     </div>
   );
 }
