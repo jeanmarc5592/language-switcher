@@ -20,7 +20,7 @@ export const SubPage = () => {
     const cleanIsoCode = isoCode.replace('/', '');
     const currentLocale = localesList.locales.find(locale => locale.iso.toLowerCase() === cleanIsoCode);
     if (!currentLocale) {
-      return `Sorry, but the language ${isoCode} is not available`;
+      return `Sorry, but '${cleanIsoCode}' is not available`;
     }
     return currentLocale.name;
   };
