@@ -1,11 +1,14 @@
+import { Routes, Route } from 'react-router';
 import styles from './App.module.css';
-import { LanguageList } from './components';
+import { HomePage, SubPage } from './pages';
 
 const App = () => {
   return (
     <div className={styles.mainContainer}>
-      <h1>Welche Sprache sprichst du?</h1>
-      <LanguageList />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:locale" element={<SubPage />} />
+      </Routes>
     </div>
   );
 }
