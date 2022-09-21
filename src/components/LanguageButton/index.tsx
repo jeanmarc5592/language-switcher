@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './LanguageButton.module.css';
 import bgFlag from '../../icons/bg.svg';
 import deFlag from '../../icons/de.svg';
@@ -37,9 +38,9 @@ export const LanguageButton: React.FC<LanguageButtonProps> = ({ code, name, iso 
   }
 
   return (
-    <a href={`/${iso.toLowerCase()}`} className={styles.container}>
+    <Link to={`/${iso.toLowerCase()}`} className={styles.container}>
       <img width="32px" height="32px" alt={`${code}-flag`} src={getCountryFlag(code)} />
       <p className={styles.countryLabel}>{name}</p>
-    </a>
+    </Link>
   )
 }
